@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+button {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.header {
+  background-color: #5D3891;
+  color: #fff;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background: linear-gradient(to bottom right, #ACBCFF, #9376E0);
+}
+
+.card-container {
+  width: 300px;
+  margin: 50px 20px;
+  box-shadow: 0 0 17px #9376E0;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.card-container h2 {
+  color: #fff;
+  margin: 10px 0;
+}
+
+.card-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card-desc {
+  color: #ffffffb5;
+  font-size: 0.9rem;
+}
+
+.c-enroll {
+  border-radius: 10px;
+  background-color: inherit;
+  cursor: pointer;
+  padding: 8px;
+  margin: 10px 98px;
+  border: 0;
+  color: #fff;
+  box-shadow: 0 0 15px #8769d7;
+  font-size: 0.8rem;
+}
+
+.c-enroll a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.c-enroll:hover {
+  box-shadow: 4px 3px 5px black;
+  transition: 0.5s;
+  scale: 1.2;
+}
+
+
+/* Media query */
+
+@media screen and (max-width:365px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .c-enroll {
+    margin: 10px 74px;
+  }
+
+  .card-container {
+    width: 250px;
+  }
+}
