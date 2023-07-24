@@ -9,17 +9,14 @@ const Courses = () => {
             </div>
             <div className="cards">
                 {Menu.map((currElem) => {
-                    const { id, img, cName, lin, cDescription } = currElem;
+                    const { id, image, cName, lin, cDescription } = currElem;
                     return (
-                        <>
-                            <div className="card-container" key={id}>
-                                <img src={img} alt="html-image" />
-                                <h2>{cName}</h2>
-                                <p className="card-desc">{cDescription}</p>
-                                <button className="c-enroll"><a href={lin}>Enroll Now</a></button>
-                            </div>
-
-                        </>
+                        <div className="card-container" key={id}>
+                            <img src={image} alt="html-image" />
+                            <h2>{cName}</h2>
+                            <p className="card-desc">{cDescription}</p>
+                            <button className="c-enroll"><a href={lin}>Enroll Now</a></button>
+                        </div>
                     )
                 })}
             </div>
